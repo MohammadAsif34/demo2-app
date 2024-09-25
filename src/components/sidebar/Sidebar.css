@@ -1,0 +1,5 @@
+.mainSidebar {
+  width: 300px;
+  height: calc(100vh - 100px - 2.5rem);
+  background-color: cyan;
+}

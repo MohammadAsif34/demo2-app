@@ -1,0 +1,62 @@
+.main {
+  width: 100%;
+  min-height: calc(100vh - 100px - 2.5rem);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  border: 1px solid black;
+  background-image: url("../../assets/weather-home.jpg");
+  /* filter: contrast(-13); */
+  /* background-image: url("../../assets/weather-home4.jpg"); */
+  background-size: cover;
+  /* background-repeat: repeat-y; */
+  background-attachment: fixed;
+  /* background-color: red; */
+  .searchBox {
+    min-width: 600px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.43);
+    backdrop-filter: blur(15px);
+  }
+  .box {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: col;
+    background-color: rgba(255, 255, 255, 0.095);
+    /* background-image: url("../../assets/weather-home4.jpg"); */
+    /* background-size: cover; */
+    backdrop-filter: blur(15px);
+  }
+  .box > div {
+    backdrop-filter: blur(2px);
+  }
+  .box2 {
+    border-left: 1px solid white;
+  }
+  .childBox {
+    background-color: rgba(255, 255, 255, 0.186);
+    backdrop-filter: blur(10px);
+  }
+  @media only screen and (max-width: 876px) {
+    .box {
+      min-width: 500px;
+      flex-direction: column;
+    }
+    .box2 {
+      border-top: 1px solid white;
+      border-left: none;
+    }
+    .childBox {
+      flex: 1 1 0%;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .searchBox {
+      width: 100%;
+    }
+    .main {
+      background-image: url("../../assets/weather-home3.jpg");
+    }
+  }
+}
